@@ -18,28 +18,3 @@ System.out.print(exampleArray[i]+" ");
 }
 }
 }
-
-Sort:
-public class Array {
-public static void main(String [] args) {
-//initialize exampleArray
-int [] exampleArray = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
-int length = exampleArray.length;
-System.out.println("Start!");
-//sort the exampleArray
-for(int i = 0; i<length; i++) {
-for(int c = 0; c<length-1; c++) {
-if(exampleArray[c]>exampleArray[c+1]) {
-int tempStorage = exampleArray[c];
-exampleArray[c] = exampleArray[c+1];
-exampleArray[c+1] = tempStorage;
-}
-}
-}
-//print
-System.out.println(“”);
-for(int i = 0; i<length; i++) {
-System.out.print(exampleArray[i]+" ");
-}
-}
-}
