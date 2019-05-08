@@ -4,28 +4,6 @@ public static void main(String [] args) {
 int [] exampleArray = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
 int length = exampleArray.length;
 System.out.println("Start!");
-//shuffle the exampleArray
-for(int i = 0; i<length; i++) {
-int random = (int) (Math.random()*length);
-int tempStorage = exampleArray[i];
-exampleArray[i] = exampleArray[random];
-exampleArray[random] = tempStorage;
-}
-//print
-System.out.println(“”);
-for(int i = 0; i<length; i++) {
-System.out.print(exampleArray[i]+" ");
-}
-}
-}
-
-Sort:
-public class Array {
-public static void main(String [] args) {
-//initialize exampleArray
-int [] exampleArray = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
-int length = exampleArray.length;
-System.out.println("Start!");
 //sort the exampleArray
 for(int i = 0; i<length; i++) {
 for(int c = 0; c<length-1; c++) {
