@@ -10,6 +10,15 @@ int random = (int) (Math.random()*length);
 int tempStorage = exampleArray[i];
 exampleArray[i] = exampleArray[random];
 exampleArray[random] = tempStorage;
+//sort the exampleArray
+for(int i = 0; i<length; i++) {
+for(int c = 0; c<length-1; c++) {
+if(exampleArray[c]>exampleArray[c+1]) {
+int tempStorage = exampleArray[c];
+exampleArray[c] = exampleArray[c+1];
+exampleArray[c+1] = tempStorage;
+}
+}
 }
 //print
 System.out.println(“”);
